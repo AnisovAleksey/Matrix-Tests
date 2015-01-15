@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace calc
 {
-    public abstract class MatrixForm : Form
+    public class MatrixForm : Form
     {
         /// <summary>
         /// Вывод матрицы в DataGridView

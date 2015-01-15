@@ -16,9 +16,14 @@
         /// <param name="matrix"></param>
         public void MatrixInput(Matrix matrix)
         {
-            if (matrix == null || dataGridView1 == null)
+            if (matrix == null || DataGridView == null)
                 return;
-            PrintToDataGridView(dataGridView1, matrix);
+            PrintToDataGridView(DataGridView, matrix);
+        }
+
+        private void CloseButtonClick(object sender, System.EventArgs e)
+        {
+            Close();
         }
 
         

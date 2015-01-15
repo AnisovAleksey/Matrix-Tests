@@ -28,274 +28,274 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.radioButtonPlus = new System.Windows.Forms.RadioButton();
-            this.radioButtonMinus = new System.Windows.Forms.RadioButton();
-            this.radioButtonMod = new System.Windows.Forms.RadioButton();
-            this.radioButtonDiv = new System.Windows.Forms.RadioButton();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.runButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            this.DataGridViewLeft = new System.Windows.Forms.DataGridView();
+            this.DataGridViewRight = new System.Windows.Forms.DataGridView();
+            this.RadioButtonPlus = new System.Windows.Forms.RadioButton();
+            this.RadioButtonMinus = new System.Windows.Forms.RadioButton();
+            this.RadioButtonMod = new System.Windows.Forms.RadioButton();
+            this.RadioButtonDiv = new System.Windows.Forms.RadioButton();
+            this.NumericRightCols = new System.Windows.Forms.NumericUpDown();
+            this.MatrixSizesRightLabel = new System.Windows.Forms.Label();
+            this.NumericRightRows = new System.Windows.Forms.NumericUpDown();
+            this.MatrixRightRowsLabel = new System.Windows.Forms.Label();
+            this.MatrixLeftRowsLabel = new System.Windows.Forms.Label();
+            this.MatrixLeftColsLabel = new System.Windows.Forms.Label();
+            this.NumericLeftRows = new System.Windows.Forms.NumericUpDown();
+            this.MatrixSizesLeftLabel = new System.Windows.Forms.Label();
+            this.NumericLeftCols = new System.Windows.Forms.NumericUpDown();
+            this.RunButton = new System.Windows.Forms.Button();
+            this.MatrixRightColsLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewLeft)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewRight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericRightCols)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericRightRows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericLeftRows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericLeftCols)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // DataGridViewLeft
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.ColumnHeadersVisible = false;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(200, 250);
-            this.dataGridView1.TabIndex = 2;
-            this.dataGridView1.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.DataGridViewCellPainting);
-            this.dataGridView1.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.DataGridViewDataError);
-            this.dataGridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DataGridViewKeyDown);
+            this.DataGridViewLeft.AllowUserToAddRows = false;
+            this.DataGridViewLeft.AllowUserToDeleteRows = false;
+            this.DataGridViewLeft.AllowUserToResizeColumns = false;
+            this.DataGridViewLeft.AllowUserToResizeRows = false;
+            this.DataGridViewLeft.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridViewLeft.ColumnHeadersVisible = false;
+            this.DataGridViewLeft.Location = new System.Drawing.Point(12, 12);
+            this.DataGridViewLeft.MultiSelect = false;
+            this.DataGridViewLeft.Name = "DataGridViewLeft";
+            this.DataGridViewLeft.RowHeadersVisible = false;
+            this.DataGridViewLeft.Size = new System.Drawing.Size(200, 250);
+            this.DataGridViewLeft.TabIndex = 2;
+            this.DataGridViewLeft.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.DataGridViewCellPainting);
+            this.DataGridViewLeft.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.DataGridViewDataError);
+            this.DataGridViewLeft.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DataGridViewKeyDown);
             // 
-            // dataGridView2
+            // DataGridViewRight
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AllowUserToResizeColumns = false;
-            this.dataGridView2.AllowUserToResizeRows = false;
-            this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.ColumnHeadersVisible = false;
-            this.dataGridView2.Location = new System.Drawing.Point(380, 12);
-            this.dataGridView2.MultiSelect = false;
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.Size = new System.Drawing.Size(200, 250);
-            this.dataGridView2.TabIndex = 5;
-            this.dataGridView2.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.DataGridViewCellPainting);
-            this.dataGridView2.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.DataGridViewDataError);
-            this.dataGridView2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DataGridViewKeyDown);
+            this.DataGridViewRight.AllowUserToAddRows = false;
+            this.DataGridViewRight.AllowUserToDeleteRows = false;
+            this.DataGridViewRight.AllowUserToResizeColumns = false;
+            this.DataGridViewRight.AllowUserToResizeRows = false;
+            this.DataGridViewRight.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridViewRight.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridViewRight.ColumnHeadersVisible = false;
+            this.DataGridViewRight.Location = new System.Drawing.Point(380, 12);
+            this.DataGridViewRight.MultiSelect = false;
+            this.DataGridViewRight.Name = "DataGridViewRight";
+            this.DataGridViewRight.RowHeadersVisible = false;
+            this.DataGridViewRight.Size = new System.Drawing.Size(200, 250);
+            this.DataGridViewRight.TabIndex = 5;
+            this.DataGridViewRight.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.DataGridViewCellPainting);
+            this.DataGridViewRight.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.DataGridViewDataError);
+            this.DataGridViewRight.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DataGridViewKeyDown);
             // 
-            // radioButtonPlus
+            // RadioButtonPlus
             // 
-            this.radioButtonPlus.AutoSize = true;
-            this.radioButtonPlus.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButtonPlus.Location = new System.Drawing.Point(227, 12);
-            this.radioButtonPlus.Name = "radioButtonPlus";
-            this.radioButtonPlus.Size = new System.Drawing.Size(116, 28);
-            this.radioButtonPlus.TabIndex = 6;
-            this.radioButtonPlus.TabStop = true;
-            this.radioButtonPlus.Text = "Сложение";
-            this.radioButtonPlus.UseVisualStyleBackColor = true;
-            this.radioButtonPlus.CheckedChanged += new System.EventHandler(this.RadioButtonPlusMinusCheckedChanged);
+            this.RadioButtonPlus.AutoSize = true;
+            this.RadioButtonPlus.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RadioButtonPlus.Location = new System.Drawing.Point(227, 12);
+            this.RadioButtonPlus.Name = "RadioButtonPlus";
+            this.RadioButtonPlus.Size = new System.Drawing.Size(116, 28);
+            this.RadioButtonPlus.TabIndex = 6;
+            this.RadioButtonPlus.TabStop = true;
+            this.RadioButtonPlus.Text = "Сложение";
+            this.RadioButtonPlus.UseVisualStyleBackColor = true;
+            this.RadioButtonPlus.CheckedChanged += new System.EventHandler(this.RadioButtonPlusMinusCheckedChanged);
             // 
-            // radioButtonMinus
+            // RadioButtonMinus
             // 
-            this.radioButtonMinus.AutoSize = true;
-            this.radioButtonMinus.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButtonMinus.Location = new System.Drawing.Point(227, 56);
-            this.radioButtonMinus.Name = "radioButtonMinus";
-            this.radioButtonMinus.Size = new System.Drawing.Size(124, 28);
-            this.radioButtonMinus.TabIndex = 7;
-            this.radioButtonMinus.TabStop = true;
-            this.radioButtonMinus.Text = "Вычитание";
-            this.radioButtonMinus.UseVisualStyleBackColor = true;
-            this.radioButtonMinus.CheckedChanged += new System.EventHandler(this.RadioButtonPlusMinusCheckedChanged);
+            this.RadioButtonMinus.AutoSize = true;
+            this.RadioButtonMinus.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RadioButtonMinus.Location = new System.Drawing.Point(227, 56);
+            this.RadioButtonMinus.Name = "RadioButtonMinus";
+            this.RadioButtonMinus.Size = new System.Drawing.Size(124, 28);
+            this.RadioButtonMinus.TabIndex = 7;
+            this.RadioButtonMinus.TabStop = true;
+            this.RadioButtonMinus.Text = "Вычитание";
+            this.RadioButtonMinus.UseVisualStyleBackColor = true;
+            this.RadioButtonMinus.CheckedChanged += new System.EventHandler(this.RadioButtonPlusMinusCheckedChanged);
             // 
-            // radioButtonMod
+            // RadioButtonMod
             // 
-            this.radioButtonMod.AutoSize = true;
-            this.radioButtonMod.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButtonMod.Location = new System.Drawing.Point(227, 102);
-            this.radioButtonMod.Name = "radioButtonMod";
-            this.radioButtonMod.Size = new System.Drawing.Size(129, 28);
-            this.radioButtonMod.TabIndex = 8;
-            this.radioButtonMod.TabStop = true;
-            this.radioButtonMod.Text = "Умножение";
-            this.radioButtonMod.UseVisualStyleBackColor = true;
-            this.radioButtonMod.CheckedChanged += new System.EventHandler(this.RadioButtonModCheckedChanged);
+            this.RadioButtonMod.AutoSize = true;
+            this.RadioButtonMod.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RadioButtonMod.Location = new System.Drawing.Point(227, 102);
+            this.RadioButtonMod.Name = "RadioButtonMod";
+            this.RadioButtonMod.Size = new System.Drawing.Size(129, 28);
+            this.RadioButtonMod.TabIndex = 8;
+            this.RadioButtonMod.TabStop = true;
+            this.RadioButtonMod.Text = "Умножение";
+            this.RadioButtonMod.UseVisualStyleBackColor = true;
+            this.RadioButtonMod.CheckedChanged += new System.EventHandler(this.RadioButtonModCheckedChanged);
             // 
-            // radioButtonDiv
+            // RadioButtonDiv
             // 
-            this.radioButtonDiv.AutoSize = true;
-            this.radioButtonDiv.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButtonDiv.Location = new System.Drawing.Point(227, 145);
-            this.radioButtonDiv.Name = "radioButtonDiv";
-            this.radioButtonDiv.Size = new System.Drawing.Size(150, 28);
-            this.radioButtonDiv.TabIndex = 9;
-            this.radioButtonDiv.TabStop = true;
-            this.radioButtonDiv.Text = "Обр. Матрица";
-            this.radioButtonDiv.UseVisualStyleBackColor = true;
-            this.radioButtonDiv.CheckedChanged += new System.EventHandler(this.RadioButtonDivCheckedChanged);
+            this.RadioButtonDiv.AutoSize = true;
+            this.RadioButtonDiv.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RadioButtonDiv.Location = new System.Drawing.Point(227, 145);
+            this.RadioButtonDiv.Name = "RadioButtonDiv";
+            this.RadioButtonDiv.Size = new System.Drawing.Size(150, 28);
+            this.RadioButtonDiv.TabIndex = 9;
+            this.RadioButtonDiv.TabStop = true;
+            this.RadioButtonDiv.Text = "Обр. Матрица";
+            this.RadioButtonDiv.UseVisualStyleBackColor = true;
+            this.RadioButtonDiv.CheckedChanged += new System.EventHandler(this.RadioButtonDivCheckedChanged);
             // 
-            // numericUpDown1
+            // NumericRightCols
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(451, 309);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.NumericRightCols.Location = new System.Drawing.Point(451, 309);
+            this.NumericRightCols.Maximum = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(41, 20);
-            this.numericUpDown1.TabIndex = 3;
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.RightNumericValueChanged);
+            this.NumericRightCols.Name = "NumericRightCols";
+            this.NumericRightCols.Size = new System.Drawing.Size(41, 20);
+            this.NumericRightCols.TabIndex = 3;
+            this.NumericRightCols.ValueChanged += new System.EventHandler(this.RightNumericValueChanged);
             // 
-            // label1
+            // MatrixSizesRightLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(376, 275);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 22);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Размеры матрицы";
+            this.MatrixSizesRightLabel.AutoSize = true;
+            this.MatrixSizesRightLabel.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MatrixSizesRightLabel.Location = new System.Drawing.Point(376, 275);
+            this.MatrixSizesRightLabel.Name = "MatrixSizesRightLabel";
+            this.MatrixSizesRightLabel.Size = new System.Drawing.Size(143, 22);
+            this.MatrixSizesRightLabel.TabIndex = 7;
+            this.MatrixSizesRightLabel.Text = "Размеры матрицы";
             // 
-            // numericUpDown2
+            // NumericRightRows
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(451, 338);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.NumericRightRows.Location = new System.Drawing.Point(451, 338);
+            this.NumericRightRows.Maximum = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(41, 20);
-            this.numericUpDown2.TabIndex = 4;
-            this.numericUpDown2.ValueChanged += new System.EventHandler(this.RightNumericValueChanged);
+            this.NumericRightRows.Name = "NumericRightRows";
+            this.NumericRightRows.Size = new System.Drawing.Size(41, 20);
+            this.NumericRightRows.TabIndex = 4;
+            this.NumericRightRows.ValueChanged += new System.EventHandler(this.RightNumericValueChanged);
             // 
-            // label2
+            // MatrixRightRowsLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(377, 308);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 18);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Столбцы";
+            this.MatrixRightRowsLabel.AutoSize = true;
+            this.MatrixRightRowsLabel.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MatrixRightRowsLabel.Location = new System.Drawing.Point(377, 337);
+            this.MatrixRightRowsLabel.Name = "MatrixRightRowsLabel";
+            this.MatrixRightRowsLabel.Size = new System.Drawing.Size(50, 18);
+            this.MatrixRightRowsLabel.TabIndex = 10;
+            this.MatrixRightRowsLabel.Text = "Строки";
             // 
-            // label3
+            // MatrixLeftRowsLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(377, 337);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 18);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Строки";
+            this.MatrixLeftRowsLabel.AutoSize = true;
+            this.MatrixLeftRowsLabel.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MatrixLeftRowsLabel.Location = new System.Drawing.Point(12, 340);
+            this.MatrixLeftRowsLabel.Name = "MatrixLeftRowsLabel";
+            this.MatrixLeftRowsLabel.Size = new System.Drawing.Size(50, 18);
+            this.MatrixLeftRowsLabel.TabIndex = 15;
+            this.MatrixLeftRowsLabel.Text = "Строки";
             // 
-            // label4
+            // MatrixLeftColsLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(12, 340);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 18);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Строки";
+            this.MatrixLeftColsLabel.AutoSize = true;
+            this.MatrixLeftColsLabel.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MatrixLeftColsLabel.Location = new System.Drawing.Point(12, 311);
+            this.MatrixLeftColsLabel.Name = "MatrixLeftColsLabel";
+            this.MatrixLeftColsLabel.Size = new System.Drawing.Size(59, 18);
+            this.MatrixLeftColsLabel.TabIndex = 14;
+            this.MatrixLeftColsLabel.Text = "Столбцы";
             // 
-            // label5
+            // NumericLeftRows
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(12, 311);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 18);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Столбцы";
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.Location = new System.Drawing.Point(86, 341);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.NumericLeftRows.Location = new System.Drawing.Point(86, 341);
+            this.NumericLeftRows.Maximum = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(41, 20);
-            this.numericUpDown3.TabIndex = 1;
-            this.numericUpDown3.ValueChanged += new System.EventHandler(this.LeftNumeriсValueChanged);
+            this.NumericLeftRows.Name = "NumericLeftRows";
+            this.NumericLeftRows.Size = new System.Drawing.Size(41, 20);
+            this.NumericLeftRows.TabIndex = 1;
+            this.NumericLeftRows.ValueChanged += new System.EventHandler(this.LeftNumeriсValueChanged);
             // 
-            // label6
+            // MatrixSizesLeftLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(11, 278);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(143, 22);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Размеры матрицы";
+            this.MatrixSizesLeftLabel.AutoSize = true;
+            this.MatrixSizesLeftLabel.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MatrixSizesLeftLabel.Location = new System.Drawing.Point(11, 278);
+            this.MatrixSizesLeftLabel.Name = "MatrixSizesLeftLabel";
+            this.MatrixSizesLeftLabel.Size = new System.Drawing.Size(143, 22);
+            this.MatrixSizesLeftLabel.TabIndex = 12;
+            this.MatrixSizesLeftLabel.Text = "Размеры матрицы";
             // 
-            // numericUpDown4
+            // NumericLeftCols
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(86, 312);
-            this.numericUpDown4.Maximum = new decimal(new int[] {
+            this.NumericLeftCols.Location = new System.Drawing.Point(86, 312);
+            this.NumericLeftCols.Maximum = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(41, 20);
-            this.numericUpDown4.TabIndex = 0;
-            this.numericUpDown4.ValueChanged += new System.EventHandler(this.LeftNumeriсValueChanged);
+            this.NumericLeftCols.Name = "NumericLeftCols";
+            this.NumericLeftCols.Size = new System.Drawing.Size(41, 20);
+            this.NumericLeftCols.TabIndex = 0;
+            this.NumericLeftCols.ValueChanged += new System.EventHandler(this.LeftNumeriсValueChanged);
             // 
-            // runButton
+            // RunButton
             // 
-            this.runButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.runButton.Location = new System.Drawing.Point(237, 297);
-            this.runButton.Name = "runButton";
-            this.runButton.Size = new System.Drawing.Size(119, 47);
-            this.runButton.TabIndex = 10;
-            this.runButton.Text = "Выполнить";
-            this.runButton.UseVisualStyleBackColor = true;
-            this.runButton.Click += new System.EventHandler(this.RunButtonClick);
+            this.RunButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RunButton.Location = new System.Drawing.Point(237, 297);
+            this.RunButton.Name = "RunButton";
+            this.RunButton.Size = new System.Drawing.Size(119, 47);
+            this.RunButton.TabIndex = 10;
+            this.RunButton.Text = "Выполнить";
+            this.RunButton.UseVisualStyleBackColor = true;
+            this.RunButton.Click += new System.EventHandler(this.RunButtonClick);
+            // 
+            // MatrixRightColsLabel
+            // 
+            this.MatrixRightColsLabel.AutoSize = true;
+            this.MatrixRightColsLabel.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MatrixRightColsLabel.Location = new System.Drawing.Point(377, 308);
+            this.MatrixRightColsLabel.Name = "MatrixRightColsLabel";
+            this.MatrixRightColsLabel.Size = new System.Drawing.Size(59, 18);
+            this.MatrixRightColsLabel.TabIndex = 9;
+            this.MatrixRightColsLabel.Text = "Столбцы";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(592, 423);
-            this.Controls.Add(this.runButton);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.numericUpDown4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.radioButtonDiv);
-            this.Controls.Add(this.radioButtonMod);
-            this.Controls.Add(this.radioButtonMinus);
-            this.Controls.Add(this.radioButtonPlus);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.RunButton);
+            this.Controls.Add(this.MatrixLeftRowsLabel);
+            this.Controls.Add(this.MatrixLeftColsLabel);
+            this.Controls.Add(this.NumericLeftRows);
+            this.Controls.Add(this.MatrixSizesLeftLabel);
+            this.Controls.Add(this.NumericLeftCols);
+            this.Controls.Add(this.MatrixRightRowsLabel);
+            this.Controls.Add(this.MatrixRightColsLabel);
+            this.Controls.Add(this.NumericRightRows);
+            this.Controls.Add(this.MatrixSizesRightLabel);
+            this.Controls.Add(this.NumericRightCols);
+            this.Controls.Add(this.RadioButtonDiv);
+            this.Controls.Add(this.RadioButtonMod);
+            this.Controls.Add(this.RadioButtonMinus);
+            this.Controls.Add(this.RadioButtonPlus);
+            this.Controls.Add(this.DataGridViewRight);
+            this.Controls.Add(this.DataGridViewLeft);
             this.Name = "MainForm";
             this.Text = "Калькулятор матриц";
             this.VisibleChanged += new System.EventHandler(this.MainFormVisibleChanged);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewLeft)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewRight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericRightCols)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericRightRows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericLeftRows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumericLeftCols)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,23 +303,23 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.RadioButton radioButtonPlus;
-        private System.Windows.Forms.RadioButton radioButtonMinus;
-        private System.Windows.Forms.RadioButton radioButtonMod;
-        private System.Windows.Forms.RadioButton radioButtonDiv;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.Button runButton;
+        private System.Windows.Forms.DataGridView DataGridViewLeft;
+        private System.Windows.Forms.DataGridView DataGridViewRight;
+        private System.Windows.Forms.RadioButton RadioButtonPlus;
+        private System.Windows.Forms.RadioButton RadioButtonMinus;
+        private System.Windows.Forms.RadioButton RadioButtonMod;
+        private System.Windows.Forms.RadioButton RadioButtonDiv;
+        private System.Windows.Forms.NumericUpDown NumericRightCols;
+        private System.Windows.Forms.Label MatrixSizesRightLabel;
+        private System.Windows.Forms.NumericUpDown NumericRightRows;
+        private System.Windows.Forms.Label MatrixRightRowsLabel;
+        private System.Windows.Forms.Label MatrixLeftRowsLabel;
+        private System.Windows.Forms.Label MatrixLeftColsLabel;
+        private System.Windows.Forms.NumericUpDown NumericLeftRows;
+        private System.Windows.Forms.Label MatrixSizesLeftLabel;
+        private System.Windows.Forms.NumericUpDown NumericLeftCols;
+        private System.Windows.Forms.Button RunButton;
+        private System.Windows.Forms.Label MatrixRightColsLabel;
     }
 }
 

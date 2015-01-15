@@ -30,7 +30,7 @@ namespace calc
         /// <param name="e"></param>
         private void RightNumericValueChanged(object sender, EventArgs e)
         {
-            InvalidateGridView(dataGridView2, numericUpDown1, numericUpDown2);
+            InvalidateGridView(DataGridViewRight, NumericRightCols, NumericRightRows);
         }
 
         /// <summary>
@@ -40,18 +40,18 @@ namespace calc
         /// <param name="e"></param>
         private void LeftNumeriсValueChanged(object sender, EventArgs e)
         {
-            InvalidateGridView(dataGridView1, numericUpDown4, numericUpDown3);
-            if (radioButtonDiv.Checked) return;
-            if (radioButtonPlus.Checked || radioButtonMinus.Checked)
+            InvalidateGridView(DataGridViewLeft, NumericLeftCols, NumericLeftRows);
+            if (RadioButtonDiv.Checked) return;
+            if (RadioButtonPlus.Checked || RadioButtonMinus.Checked)
             {
-                numericUpDown1.Value = numericUpDown4.Value;
-                numericUpDown2.Value = numericUpDown3.Value;
+                NumericRightCols.Value = NumericLeftCols.Value;
+                NumericRightRows.Value = NumericLeftRows.Value;
             }
-            else if (radioButtonMod.Checked)
+            else if (RadioButtonMod.Checked)
             {
-                numericUpDown2.Value = numericUpDown4.Value;
+                NumericRightRows.Value = NumericLeftCols.Value;
             }
-            InvalidateGridView(dataGridView2, numericUpDown1, numericUpDown2);
+            InvalidateGridView(DataGridViewRight, NumericRightCols, NumericRightRows);
         }
 
         /// <summary>
@@ -161,7 +161,7 @@ namespace calc
                 MessageBox.Show(@"Выберите операцию действия над матрицами");
                 return;
             }
-            if (dataGridView1.ColumnCount == 0)
+            if (DataGridViewLeft.ColumnCount == 0)
             {
                 MessageBox.Show(@"Введите матрицу");
                 return;
@@ -171,10 +171,10 @@ namespace calc
             Matrix matrixRight;
             try
             {
-                matrixLeft = new Matrix(dataGridView1.RowCount, dataGridView1.ColumnCount);
-                FillMatrixFromDataGridView(dataGridView1, matrixLeft);
-                matrixRight = new Matrix(dataGridView2.RowCount, dataGridView2.ColumnCount);
-                FillMatrixFromDataGridView(dataGridView2, matrixRight);
+                matrixLeft = new Matrix(DataGridViewLeft.RowCount, DataGridViewLeft.ColumnCount);
+                FillMatrixFromDataGridView(DataGridViewLeft, matrixLeft);
+                matrixRight = new Matrix(DataGridViewRight.RowCount, DataGridViewRight.ColumnCount);
+                FillMatrixFromDataGridView(DataGridViewRight, matrixRight);
             }
             catch (Exception error)
             {
@@ -191,13 +191,13 @@ namespace calc
         /// <returns>Операция для матриц</returns>
         private Operation? GetSelectedOperation()
         {
-            if (radioButtonPlus.Checked)
+            if (RadioButtonPlus.Checked)
                 return Operation.Plus;
-            else if (radioButtonMinus.Checked)
+            else if (RadioButtonMinus.Checked)
                 return Operation.Minus;
-            else if (radioButtonMod.Checked)
+            else if (RadioButtonMod.Checked)
                 return Operation.Mod;
-            else if (radioButtonDiv.Checked)
+            else if (RadioButtonDiv.Checked)
                 return Operation.Div;
             return null;
         }
@@ -215,10 +215,10 @@ namespace calc
             var radioButton = (RadioButton)sender;
             if (!radioButton.Checked) return;
 
-            numericUpDown1.Value = numericUpDown4.Value;
-            numericUpDown2.Value = numericUpDown3.Value;
-            numericUpDown1.Enabled = false;
-            numericUpDown2.Enabled = false;
+            NumericRightCols.Value = NumericLeftCols.Value;
+            NumericRightRows.Value = NumericLeftRows.Value;
+            NumericRightCols.Enabled = false;
+            NumericRightRows.Enabled = false;
         }
 
         /// <summary>
@@ -229,12 +229,11 @@ namespace calc
         /// <param name="e"></param>
         private void RadioButtonModCheckedChanged(object sender, EventArgs e)
         {
-            if (!radioButtonMod.Checked) return;
+            if (!RadioButtonMod.Checked) return;
 
-            numericUpDown2.Value = numericUpDown4.Value;
-            numericUpDown2.Enabled = false;
-            numericUpDown1.Enabled = true;
-            numericUpDown1.Value = 0;
+            NumericRightRows.Value = NumericLeftCols.Value;
+            NumericRightRows.Enabled = false;
+            NumericRightCols.Enabled = true;
         }
 
         /// <summary>
@@ -246,8 +245,8 @@ namespace calc
         {
             if (!Visible) return;
 
-            radioButtonPlus.Checked = true;
-            RadioButtonPlusMinusCheckedChanged(radioButtonPlus, null);
+            RadioButtonPlus.Checked = true;
+            RadioButtonPlusMinusCheckedChanged(RadioButtonPlus, null);
         }
 
         /// <summary>
@@ -258,10 +257,13 @@ namespace calc
         /// <param name="e"></param>
         private void RadioButtonDivCheckedChanged(object sender, EventArgs e)
         {
-            if (!radioButtonDiv.Checked) return;
+            if (!RadioButtonDiv.Checked) return;
 
-            numericUpDown1.Enabled = false;
-            numericUpDown2.Enabled = false;
+            NumericRightCols.Enabled = false;
+            NumericRightRows.Enabled = false;
+            NumericRightCols.Value = 0;
+            NumericRightRows.Value = 0;
+            InvalidateGridView(DataGridViewRight, NumericRightCols, NumericRightRows);
         }
 
         /// <summary>
@@ -269,13 +271,13 @@ namespace calc
         /// </summary>
         /// <param name="dataGridView">DataGridView как источник данных</param>
         /// <param name="matrix">Матрица для заполнения</param>
-        private void FillMatrixFromDataGridView(DataGridView dataGridView, Matrix matrix)
+        private static void FillMatrixFromDataGridView(DataGridView dataGridView, Matrix matrix)
         {
-            int rows = Math.Min(dataGridView.RowCount, matrix.RowsCount);
-            int columns = Math.Min(dataGridView.ColumnCount, matrix.ColumnsCount);
-            for (int i = 0; i < rows; i++)
+            var rows = Math.Min(dataGridView.RowCount, matrix.RowsCount);
+            var columns = Math.Min(dataGridView.ColumnCount, matrix.ColumnsCount);
+            for (var i = 0; i < rows; i++)
             {
-                for (int j = 0; j < columns; j++)
+                for (var j = 0; j < columns; j++)
                 {
                     matrix[i, j] = (double) dataGridView.Rows[i].Cells[j].Value;
                 }
