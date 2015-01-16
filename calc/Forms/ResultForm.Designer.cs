@@ -1,4 +1,4 @@
-﻿namespace calc
+﻿namespace calc.Forms
 {
     partial class ResultForm
     {
@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.DataGridView = new System.Windows.Forms.DataGridView();
+            this.DataGridViewResult = new System.Windows.Forms.DataGridView();
             this.CloseButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewResult)).BeginInit();
             this.SuspendLayout();
             // 
-            // DataGridView
+            // DataGridViewResult
             // 
-            this.DataGridView.AllowUserToAddRows = false;
-            this.DataGridView.AllowUserToDeleteRows = false;
-            this.DataGridView.AllowUserToResizeColumns = false;
-            this.DataGridView.AllowUserToResizeRows = false;
-            this.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView.ColumnHeadersVisible = false;
-            this.DataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.DataGridView.Location = new System.Drawing.Point(12, 12);
-            this.DataGridView.MultiSelect = false;
-            this.DataGridView.Name = "DataGridView";
-            this.DataGridView.RowHeadersVisible = false;
-            this.DataGridView.Size = new System.Drawing.Size(600, 400);
-            this.DataGridView.TabIndex = 0;
+            this.DataGridViewResult.AllowUserToAddRows = false;
+            this.DataGridViewResult.AllowUserToDeleteRows = false;
+            this.DataGridViewResult.AllowUserToResizeColumns = false;
+            this.DataGridViewResult.AllowUserToResizeRows = false;
+            this.DataGridViewResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridViewResult.ColumnHeadersVisible = false;
+            this.DataGridViewResult.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.DataGridViewResult.Location = new System.Drawing.Point(12, 12);
+            this.DataGridViewResult.MultiSelect = false;
+            this.DataGridViewResult.Name = "DataGridViewResult";
+            this.DataGridViewResult.RowHeadersVisible = false;
+            this.DataGridViewResult.Size = new System.Drawing.Size(600, 400);
+            this.DataGridViewResult.TabIndex = 0;
             // 
             // CloseButton
             // 
-            this.CloseButton.Location = new System.Drawing.Point(191, 446);
+            this.CloseButton.Location = new System.Drawing.Point(226, 446);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(184, 48);
             this.CloseButton.TabIndex = 1;
@@ -65,17 +65,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(625, 522);
             this.Controls.Add(this.CloseButton);
-            this.Controls.Add(this.DataGridView);
+            this.Controls.Add(this.DataGridViewResult);
             this.Name = "ResultForm";
             this.Text = "Результат вычислений";
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewResult)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView DataGridView;
+        private System.Windows.Forms.DataGridView DataGridViewResult;
         private System.Windows.Forms.Button CloseButton;
     }
 }

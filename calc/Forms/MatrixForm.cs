@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
+using calc.Model;
 
-namespace calc
+namespace calc.Forms
 {
     public class MatrixForm : Form
     {

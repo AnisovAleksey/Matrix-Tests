@@ -1,4 +1,7 @@
-﻿namespace calc
+﻿using System.Windows.Forms;
+using calc.Model;
+
+namespace calc.Forms
 {
     public partial class ResultForm : MatrixForm
     {
@@ -16,9 +19,9 @@
         /// <param name="matrix"></param>
         public void MatrixInput(Matrix matrix)
         {
-            if (matrix == null || DataGridView == null)
+            if (matrix == null || DataGridViewResult == null)
                 return;
-            PrintToDataGridView(DataGridView, matrix);
+            PrintToDataGridView(DataGridViewResult, matrix);
         }
 
         private void CloseButtonClick(object sender, System.EventArgs e)

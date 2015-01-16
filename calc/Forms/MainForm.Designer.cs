@@ -1,4 +1,4 @@
-﻿namespace calc
+﻿namespace calc.Forms
 {
     partial class MainForm
     {

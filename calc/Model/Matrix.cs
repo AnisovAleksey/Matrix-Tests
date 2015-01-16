@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace calc
+namespace calc.Model
 {
     public class Matrix
     {

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using calc.Model;
+using calc.Forms;
 
 namespace calc
 {
