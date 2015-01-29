@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{0A3B18C8-A5A6-4BF2-B1F4-4007011FA6B8}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>calc</RootNamespace>
     <AssemblyName>calc</AssemblyName>
@@ -47,29 +47,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MatrixForm.cs">
+    <Compile Include="Forms\MatrixForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ResultForm.cs">
+    <Compile Include="Forms\ResultForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ResultForm.Designer.cs">
+    <Compile Include="Forms\ResultForm.Designer.cs">
       <DependentUpon>ResultForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Matrix.cs" />
+    <Compile Include="Model\CustomStack.cs" />
+    <Compile Include="Model\Matrix.cs" />
+    <Compile Include="MsTest\Test1.cs" />
     <Compile Include="Operation.cs" />
     <Compile Include="ProgramController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ResultForm.resx">
+    <EmbeddedResource Include="Forms\ResultForm.resx">
       <DependentUpon>ResultForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
