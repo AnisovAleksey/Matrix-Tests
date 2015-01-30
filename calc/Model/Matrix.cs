@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace calc.Model
 {
@@ -313,7 +314,19 @@ namespace calc.Model
             return result;
         }
 
-
-        
+        public override bool Equals(object obj)
+        {
+            if (obj == null) return false;
+            if (obj.GetType() != GetType()) return false;
+            var matrix = (Matrix) obj;
+            if (matrix.ColumnsCount != ColumnsCount) return false;
+            if (matrix.RowsCount != RowsCount) return false;
+            for (var i = 0; i < RowsCount * ColumnsCount; i++)
+            {
+                if (this[i] != matrix[i])
+                    return false;
+            }
+            return true;
+        }
     }
 }

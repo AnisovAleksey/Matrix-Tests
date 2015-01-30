@@ -64,7 +64,6 @@
     </Compile>
     <Compile Include="Model\CustomStack.cs" />
     <Compile Include="Model\Matrix.cs" />
-    <Compile Include="MsTest\Test1.cs" />
     <Compile Include="Operation.cs" />
     <Compile Include="ProgramController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
