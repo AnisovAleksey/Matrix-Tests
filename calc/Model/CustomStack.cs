@@ -7,7 +7,7 @@ namespace calc.Model
         ///     Стек элементов на основе массива.
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        public class CustomStack<T>
+        public class CustomStack<T> where T : ICloneable
         {
             /// <summary>
             ///     Элементы стека
@@ -116,7 +116,7 @@ namespace calc.Model
                     Array.Copy(_array, 0, newArray, 0, Count);
                     _array = newArray;
                 }
-                _array[Count++] = item;
+                _array[Count++] = (T) item.Clone();
             }
 
             /// <summary>

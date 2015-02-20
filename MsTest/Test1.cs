@@ -1,4 +1,5 @@
-﻿using calc.Model;
+﻿using System;
+using calc.Model;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace MsTest
@@ -7,7 +8,7 @@ namespace MsTest
     public class Test1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestMatrixSum()
         {
             var matrix = new Matrix(2);
             matrix[0, 0] = 1;
@@ -29,6 +30,32 @@ namespace MsTest
 
             var result = matrix + matrix2;
             Assert.AreEqual(result, matrix3);
+        }
+
+        [TestMethod]
+        public void TestNullMatrix()
+        {
+            try
+            {
+                var matrix = new Matrix(0);
+                Assert.Fail();
+            }
+            catch (Exception e)
+            {
+                // ignore
+            }
+        }
+
+        [TestMethod]
+        public void TestStackPush()
+        {
+            var stack = new CustomStack<CloneableMock>();
+
+            var mock = new CloneableMock();
+
+            stack.Push(mock);
+
+            Assert.AreEqual(mock.GetCloneCallCount(), 1);
         }
     }
 }

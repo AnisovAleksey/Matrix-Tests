@@ -323,7 +323,7 @@ namespace calc.Model
             if (matrix.RowsCount != RowsCount) return false;
             for (var i = 0; i < RowsCount * ColumnsCount; i++)
             {
-                if (this[i] != matrix[i])
+                if (Math.Abs(this[i] - matrix[i]) > Double.Epsilon)
                     return false;
             }
             return true;
